@@ -67,7 +67,7 @@ Precio de la Unidad : 5
 #### C. Cambiar número de unidades de una Cerveza.
 Se deberá preguntar el código de la cerveza. Si lo encontramos en el carrito mostraremos toda la
 información y preguntaremos el nuevo número de unidades. Ejemplo:
-```
+
 Codigo de la Bebida : 334  | Codigo de la Bebida : 1234
 ------------- | -------------
 Informacion de la Bebida  | Informacion de la Bebida
@@ -79,7 +79,7 @@ Precio de la Unidad : 5
 Nuevo numero de unidades : 8
 El numero de unidades ha sido
 actualizado. 
-```
+
 Si el nuevo número de unidades introducido por el usuario es 0, la cerveza se borrará del carrito de la
 compra.
 Como ayuda para hacer esta opción podéis primero implementar estos dos algoritmos auxiliares:
