@@ -78,7 +78,7 @@ Numero de Unidades : 5                |
 Precio de la Unidad : 5               |
 Nuevo numero de unidades : 8          |
 El numero de unidades ha sido         |
-actualizado.
+actualizado.                          |
 ```
 Si el nuevo número de unidades introducido por el usuario es 0, la cerveza se borrará del carrito de la
 compra.
@@ -98,5 +98,3 @@ continuar comprando. Ejemplo:
 Desea pagar y vaciar el carrito   |   Desea pagar y vaciar el carrito: N
 (S/N)?: s                         |   Continúe comprando.
 Gracias por su Compra.            |
-
-
