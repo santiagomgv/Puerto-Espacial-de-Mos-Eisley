@@ -15,7 +15,7 @@ X. Salir del Programa.
 Introduzca Opción: 
 ```
 
-## Descripción de las Opciones:
+#### Descripción de las Opciones:
 A. Insertar una bebida al carrito.
 -----------------------------
 Se deberá leer toda la información de la bebida siguiendo el siguiente formato:
