@@ -1,13 +1,4 @@
 /*
-    ********Práctica Evaluable********
-    - 1ºB Curso 2017/2018
-    - Elaborado Por : Santiago Manuel González Valdés Curso: 1-B Telemática.
-    - Fecha: 1 de Enero - 2.018
-
-    ***IGNORANDO TILDES EN PALABRAS***
-*/
-
-/*
 La Cantina del Puerto Espacial de Mos Eisley vende diferentes y exóticos tragos a hombres, Wookies, Hutts,
 Ewok, Moradores de las arenas, etc, pero nunca a droides. Para mejorar su servicio desea desarrollar una
 aplicación que permita a sus clientes realizar sus pedidos “on line” a través de sus dispositivos móviles.
