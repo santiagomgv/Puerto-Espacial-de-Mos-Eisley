@@ -15,10 +15,77 @@ X. Salir del Programa.
 Introduzca Opción: 
 ```
 
-#### Descripción de las Opciones:
-A. Insertar una bebida al carrito.
+Descripción de las Opciones:
 -----------------------------
+#### A. Insertar una bebida al carrito.
+
 Se deberá leer toda la información de la bebida siguiendo el siguiente formato:
 ```
+Codigo de la bebida : 534
+Nombre de la bebida : Accarrgm
+Cliente : Wookie
+Numero de Unidades : 4
+Precio de la Unidad : 3
+```
+El tipo de cliente se leerá como una cadena de caracteres que habrá que convertir en un enumerado y
+se reintentará la lectura hasta que la conversión sea correcta. Posteriormente, se insertará en la
+estructura. Si ya hay 50 bebidas insertadas, se mostrará el correspondiente mensaje de error.
+
+#### B. Listar todos los productos del carrito.
+Se deberá mostrar la información de todos los productos almacenados en el carrito de la compra
+siguiendo el siguiente formato:
+```
+SU CARRITO CONTIENE
+====================
+Codigo de la Bebida : 101
+Nombre de la Bebida : Polvo de Cometa
+Cliente de la Bebida : Ewok
+Numero de Unidades : 3
+Precio de la Unidad : 1
+
+Codigo de la Bebida : 232
+Nombre de la Bebida : Amarga de Tatooine
+Cliente de la Bebida : Morador_Arena
+Numero de Unidades : 2
+Precio de la Unidad : 2
+
+Codigo de la Bebida : 534
+Nombre de la Bebida : Accarrgm
+Cliente de la Bebida :
+Numero de Unidades : 4
+Precio de la Unidad : 3
+
+Codigo de la Bebida : 334
+Nombre de la Bebida : Flamígero
+Cliente de la Bebida : Hombre
+Numero de Unidades : 5
+Precio de la Unidad : 5
+```
+
+#### C. Cambiar número de unidades de una Cerveza.
+Se deberá preguntar el código de la cerveza. Si lo encontramos en el carrito mostraremos toda la
+información y preguntaremos el nuevo número de unidades. Ejemplo:
+```
+Codigo de la Bebida : 334 | Codigo de la Bebida : 1234
+------------ | -------------
+Informacion de la Bebida | Content from cell 2
+=========================  Codigo de la Bebida : 1234 Informacion de la Bebida =========================Bebida no encontrada.
+Codigo de la Bebida : 334 
+Nombre de la Bebida : Flamígero  
+Cliente de la Bebida : Hombre  
+Numero de Unidades : 5
+Precio de la Unidad : 5
+Nuevo numero de unidades : 8
+El numero de unidades ha sido
+actualizado.
+```
+Si el nuevo número de unidades introducido por el usuario es 0, la cerveza se borrará del carrito de la
+compra.
+Como ayuda para hacer esta opción podéis primero implementar estos dos algoritmos auxiliares:
+  * Un algoritmo para **buscar** una bebida en el carrito de la compra dado su código.
+  * Un algoritmo para **borrar** una bebida del carrito de la compra dado su código.
+
+#### D. Pagar la cuenta.
+
 
 
