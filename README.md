@@ -68,24 +68,18 @@ Precio de la Unidad : 5
 Se deberá preguntar el código de la cerveza. Si lo encontramos en el carrito mostraremos toda la
 información y preguntaremos el nuevo número de unidades. Ejemplo:
 ```
-Codigo de la Bebida : 334
-Informacion de la Bebida
-=========================
-Codigo de la Bebida : 334
-Nombre de la Bebida : Flamígero
-Cliente de la Bebida : Hombre
-Numero de Unidades : 5
-Precio de la Unidad : 5
-Nuevo numero de unidades : 8
-El numero de unidades ha sido
+Codigo de la Bebida : 334             |  Codigo de la Bebida : 1234
+Informacion de la Bebida              |  Informacion de la Bebida
+=========================             |  =========================
+Codigo de la Bebida : 334             | Bebida no encontrada.
+Nombre de la Bebida : Flamígero       |
+Cliente de la Bebida : Hombre         |
+Numero de Unidades : 5                |
+Precio de la Unidad : 5               |
+Nuevo numero de unidades : 8          |
+El numero de unidades ha sido         |
 actualizado.
-
-Codigo de la Bebida : 1234
-Informacion de la Bebida
-=========================
-Bebida no encontrada.
 ```
-
 Si el nuevo número de unidades introducido por el usuario es 0, la cerveza se borrará del carrito de la
 compra.
 Como ayuda para hacer esta opción podéis primero implementar estos dos algoritmos auxiliares:
@@ -101,8 +95,8 @@ Precio total de la compra : 59 monedas
 Posteriormente se le preguntará al cliente si desea pagar y borrar el carrito de la compra o desea
 continuar comprando. Ejemplo:
 ```
-Desea pagar y vaciar el carrito | Desea pagar y vaciar el carrito: N
-(S/N)?: s                       | Continúe comprando.
-Gracias por su Compra
+Desea pagar y vaciar el carrito   |   Desea pagar y vaciar el carrito: N
+(S/N)?: s                         |   Continúe comprando.
+Gracias por su Compra.            |
 
 
