@@ -1,3 +1,6 @@
+Markup : ![picture alt](https://vignette.wikia.nocookie.net/clubpenguin/images/4/40/Puerto.png/revision/latest?cb=20130727165528&path-prefix=es "SantiagoMGVl")
+
+Markup :  - - - -
 Puerto-Espacial-de-Mos-Eisley
 ===============================
 La Cantina del Puerto Espacial de Mos Eisley vende diferentes y exóticos tragos a hombres, Wookies, Hutts, Ewok, Moradores de las arenas, etc, pero nunca a droides. Para mejorar su servicio desea desarrollar una aplicación que permita a sus clientes realizar sus pedidos “on line” a través de sus dispositivos móviles. Para ello desarrolla un “carrito de la compra”. El carrito podrá contener como máximo 50 bebidas y de cada bebida se almacenará su código (número natural), nombre (cadena de caracteres), tipo de cliente (Hombre, Wookie, Hutt, Ewok, Morador_Arena), el número de unidades (número natural) y el precio en monedas (número natural).
@@ -66,18 +69,17 @@ Precio de la Unidad : 5
 Se deberá preguntar el código de la cerveza. Si lo encontramos en el carrito mostraremos toda la
 información y preguntaremos el nuevo número de unidades. Ejemplo:
 ```
-Codigo de la Bebida : 334 | Codigo de la Bebida : 1234
------------- | -------------
-Informacion de la Bebida | Content from cell 2
-=========================  Codigo de la Bebida : 1234 Informacion de la Bebida =========================Bebida no encontrada.
-Codigo de la Bebida : 334 
-Nombre de la Bebida : Flamígero  
-Cliente de la Bebida : Hombre  
+Codigo de la Bebida : 334  | Codigo de la Bebida : 1234
+------------- | -------------
+Informacion de la Bebida  | Informacion de la Bebida
+Codigo de la Bebida : 334 | Informacion de la Bebida ========================= Bebida no encontrada.
+Nombre de la Bebida : Flamígero
+Cliente de la Bebida : Hombre
 Numero de Unidades : 5
 Precio de la Unidad : 5
 Nuevo numero de unidades : 8
 El numero de unidades ha sido
-actualizado.
+actualizado. 
 ```
 Si el nuevo número de unidades introducido por el usuario es 0, la cerveza se borrará del carrito de la
 compra.
@@ -86,6 +88,12 @@ Como ayuda para hacer esta opción podéis primero implementar estos dos algorit
   * Un algoritmo para **borrar** una bebida del carrito de la compra dado su código.
 
 #### D. Pagar la cuenta.
-
+Se deberá mostrar el precio total de la compra, calculando el precio total de cada cerveza en base al
+número de unidades compradas y al precio de cada unidad.
+```
+Precio total de la compra : 59 monedas
+```
+Posteriormente se le preguntará al cliente si desea pagar y borrar el carrito de la compra o desea
+continuar comprando. Ejemplo:
 
 
