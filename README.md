@@ -1,6 +1,5 @@
-Markup : ![picture alt](https://vignette.wikia.nocookie.net/clubpenguin/images/4/40/Puerto.png/revision/latest?cb=20130727165528&path-prefix=es "SantiagoMGVl")
-
-Markup :  - - - -
+![picture alt](https://vignette.wikia.nocookie.net/clubpenguin/images/4/40/Puerto.png/revision/latest?cb=20130727165528&path-prefix=es "SantiagoMGVl")
+ - - - -
 Puerto-Espacial-de-Mos-Eisley
 ===============================
 La Cantina del Puerto Espacial de Mos Eisley vende diferentes y exóticos tragos a hombres, Wookies, Hutts, Ewok, Moradores de las arenas, etc, pero nunca a droides. Para mejorar su servicio desea desarrollar una aplicación que permita a sus clientes realizar sus pedidos “on line” a través de sus dispositivos móviles. Para ello desarrolla un “carrito de la compra”. El carrito podrá contener como máximo 50 bebidas y de cada bebida se almacenará su código (número natural), nombre (cadena de caracteres), tipo de cliente (Hombre, Wookie, Hutt, Ewok, Morador_Arena), el número de unidades (número natural) y el precio en monedas (número natural).
