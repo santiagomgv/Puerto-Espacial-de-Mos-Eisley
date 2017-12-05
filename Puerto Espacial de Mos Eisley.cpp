@@ -19,6 +19,7 @@ using namespace std;
 char Menu();
 char Menu_Insertar_bebida_carrito();
 
+int MenuAll();
 
 void Insertar_bebida_carrito();
 void Listar_todos_productos_carrito();
@@ -26,13 +27,20 @@ void Cambiar_numero__unidades();
 void Pagar_cuenta();
 void pausa();
 
-bool Confirmar();
+bool ConfirmarSalir();
 bool ConfirmarPago();
 
 //---------------- Programa Principal ----------------
 int main()
 {
- //----------------  Zona de Declaración de Variables del Programa principal----------------
+
+ MenuAll();
+
+}
+
+// ----------------  Implementación de Procedimientos y Funciones ----------------
+int MenuAll(){
+//----------------  Zona de Declaración de Variables del Programa principal----------------
  bool salir = false;
  char opcion;
 
@@ -65,7 +73,7 @@ int main()
 
                 case 'X':
                     system("cls");
-                    salir = Confirmar();
+                    salir = ConfirmarSalir();
 
                     break;
 
@@ -80,8 +88,6 @@ int main()
         }
     return 0;
 }
-
-// ----------------  Implementación de Procedimientos y Funciones ----------------
 char Menu()
     {
         char opcion;
@@ -118,7 +124,7 @@ char Menu_Insertar_bebida_carrito()
             cout << " Nombre de la bebida: " << endl;
             cout << " Cliente: " << endl;;
             cout << " Numero de Unidades: " << endl;
-            cout << " Precio de la Unidad: " << endl;
+            cout << " Precio de la Unidad: " << endl << endl;
             pausa();
 
     }
@@ -142,7 +148,7 @@ void pausa()
     }
 
 
-bool Confirmar()
+bool ConfirmarSalir()
     {
         char si_no;
 
