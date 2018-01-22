@@ -18,7 +18,7 @@ el precio en monedas (número natural).
 using namespace std;
 //----------------  Zona de Declaración de Constantes ----------------
 
-const int BEBIDAS_MAX_CARRITO = 1;
+const int BEBIDAS_MAX_CARRITO = 50;
 
 // ---------------- Zona de Declaración de Tipos ----------------
 
