@@ -50,6 +50,7 @@ int  MenuAll();
 void pausa();
 
 void Inicia_carrito(TCarrito &carrito);
+void Borra_carrito(TCarrito &carrito);
 void Visualizar_bebidas(const TCarrito &carrito);
 void Leer_bebidas(TBebida &bebida);
 void Escribir_bebida(const TBebida &bebida);
@@ -62,8 +63,8 @@ void Borrar_Bebida(TCarrito &carrito, const int &codigo);
 void Pagar_cuenta(TCarrito &carrito);
 
 bool Carrito_Lleno(const TCarrito &carrito);
-bool ConfirmarSalir();
-bool ConfirmarPago();
+bool ConfirmarSalir(TCarrito &carrito);
+bool ConfirmarPago(TCarrito &carrito);
 
 
 TCliente LeeCliente();
@@ -94,6 +95,7 @@ int MenuAll(){
  TCarrito carrito;
 
  Inicia_carrito(carrito);
+
 
   while(!salir){
 
@@ -137,13 +139,13 @@ int MenuAll(){
                     system("clear");
                     system("cls");
                     Pagar_cuenta(carrito);
-                    salir = ConfirmarPago();
+                    salir = ConfirmarPago(carrito);
                     break;
 
                 case 'X':
                     system("clear");
                     system("cls");
-                    salir = ConfirmarSalir();
+                    salir = ConfirmarSalir(carrito);
 
                     break;
 
@@ -189,6 +191,14 @@ char Menu(){
     }
 
 void Inicia_carrito(TCarrito &carrito){
+	for(int i=0; i < BEBIDAS_MAX_CARRITO; ++i){
+
+        carrito[i].espacio_vacio = true;
+
+	}
+}
+
+void Borra_carrito(TCarrito &carrito){
 	for(int i=0; i < BEBIDAS_MAX_CARRITO; ++i){
 
         carrito[i].espacio_vacio = true;
@@ -411,7 +421,7 @@ void pausa(){
 }
 
 
-bool ConfirmarSalir(){
+bool ConfirmarSalir(TCarrito &carrito){
 
         char si_no;
 
@@ -427,7 +437,7 @@ bool ConfirmarSalir(){
 
         }
         else if (si_no == 'S'){
-
+            Borra_carrito(carrito);
             return true;
 
         }
@@ -435,7 +445,7 @@ bool ConfirmarSalir(){
         return 0;
 }
 
-bool ConfirmarPago(){
+bool ConfirmarPago(TCarrito &carrito){
 
         char si_no_pagar;
 
@@ -453,6 +463,7 @@ bool ConfirmarPago(){
 
         }
         else if (si_no_pagar == 'S'){
+            Borra_carrito(carrito);
             return true;
 
         }
