@@ -18,7 +18,7 @@ el precio en monedas (número natural).
 using namespace std;
 //----------------  Zona de Declaración de Constantes ----------------
 
-const int BEBIDAS_MAX_CARRITO = 50;
+const int BEBIDAS_MAX_CARRITO = 1;
 
 // ---------------- Zona de Declaración de Tipos ----------------
 
@@ -149,7 +149,7 @@ int MenuAll(){
 
                 default:
                     system("cls");
-                    cout << "\tOpcion Incorrecta ..." << endl;
+                    cout << endl <<"\tOpcion Incorrecta ..." << endl;
                     pausa();
                     break;
 
@@ -365,6 +365,7 @@ void Cambiar_numero_unidades(TCarrito &carrito, const int &codigo, TBebida &bebi
 }
 
 void Pagar_cuenta( TCarrito &carrito){
+    
     int cuenta = 0;
 
 	for(int i=0; i < BEBIDAS_MAX_CARRITO; ++i){
@@ -433,7 +434,7 @@ TCliente LeeCliente()
 string Mayusculas(string s)
 {
 	string res = "";
-	for(unsigned int i=0;i<s.length();++i)
+	for(unsigned int i=0;i<s.length(); ++i)
 	{
 		res+=toupper(s[i]);
 	}
@@ -457,11 +458,13 @@ bool ConfirmarSalir(){
             si_no = toupper(si_no);
 
         if (si_no == 'N'){
+                
             system("PAUSE");
             return false;
 
         }
         else if (si_no == 'S'){
+                
             return true;
 
         }
@@ -470,6 +473,7 @@ bool ConfirmarSalir(){
 }
 
 bool ConfirmarPago(){
+    
         char si_no_pagar;
 
             cout << endl;
