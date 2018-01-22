@@ -18,7 +18,7 @@ el precio en monedas (número natural).
 using namespace std;
 //----------------  Zona de Declaración de Constantes ----------------
 
-const int BEBIDAS_MAX_CARRITO = 50;
+const int BEBIDAS_MAX_CARRITO = 1;
 
 // ---------------- Zona de Declaración de Tipos ----------------
 
@@ -66,7 +66,7 @@ bool ConfirmarPago();
 
 
 TCliente LeeCliente();
-TCliente SUC(TCliente c);
+TCliente Siguiente (TCliente c);
 
 string Cliente2Cadena(TCliente c);
 string Mayusculas(string s);
@@ -377,7 +377,7 @@ void Pagar_cuenta( TCarrito &carrito){
 	cout << "Precio total de la compra: " << cuenta << " monedas."<<endl;
 }
 
-TCliente SUC(TCliente c)
+TCliente Siguiente (TCliente c)
 {
 	return TCliente(int(c)+1);
 }
@@ -408,7 +408,7 @@ void Cadena2Cliente(string s, TCliente &c, bool &ok)
 		if (Mayusculas(s)==Mayusculas(Cliente2Cadena(c)))
 			ok = true;
 		else
-			c = SUC(c);
+			c = Siguiente(c);
 	}
 
 }
